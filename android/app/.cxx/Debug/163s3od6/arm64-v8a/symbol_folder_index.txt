@@ -1,0 +1,1 @@
+C:\Users\Jamal Khan\OneDrive\Documents\Developement\flutter\projects\clean_architecture_posts_project\build\app\intermediates\cxx\Debug\163s3od6\obj\arm64-v8a
