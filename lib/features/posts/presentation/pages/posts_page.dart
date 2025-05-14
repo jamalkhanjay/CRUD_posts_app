@@ -1,4 +1,4 @@
-import 'package:clean_architecture_posts_project/features/posts/data/models/post.dart';
+// import 'package:clean_architecture_posts_project/features/posts/data/models/post.dart';
 import 'package:clean_architecture_posts_project/features/posts/presentation/providers/posts_async_notifier_provider.dart';
 import 'package:clean_architecture_posts_project/features/posts/presentation/widgets/post_list_item.dart';
 import 'package:flutter/cupertino.dart';
