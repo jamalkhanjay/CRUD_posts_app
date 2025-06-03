@@ -118,7 +118,8 @@ class PostListItem extends ConsumerWidget {
       builder: (context) => AlertDialog(
         title: const Text('Delete Post?'),
         content: const Text(
-            'Are you sure you want to delete this post? This action cannot be undone.'),
+          'Are you sure you want to delete this post? This action cannot be undone.',
+        ),
         actions: [
           TextButton(
             onPressed: () => Navigator.pop(context),
@@ -129,7 +130,12 @@ class PostListItem extends ConsumerWidget {
               Navigator.pop(context);
               _deletePost(context, ref);
             },
-            child: const Text('Delete', style: TextStyle(color: Colors.red)),
+            child: const Text(
+              'Delete',
+              style: TextStyle(
+                color: Colors.red,
+              ),
+            ),
           ),
         ],
       ),
