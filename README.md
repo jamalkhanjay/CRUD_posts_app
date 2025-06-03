@@ -1,4 +1,4 @@
-# clean_architecture_posts_project
+# CRUD_clean_architecture_posts_project
 
 A new Flutter project.
 
