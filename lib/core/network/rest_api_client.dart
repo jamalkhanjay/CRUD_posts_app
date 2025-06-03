@@ -1,5 +1,6 @@
 // We have to create an abstruct class for this rest_client
 
+import 'package:clean_architecture_posts_project/core/network/endpoints.dart';
 import 'package:clean_architecture_posts_project/core/network/http_client.dart';
 import 'package:clean_architecture_posts_project/features/posts/data/models/post.dart';
 import 'package:dio/dio.dart';
@@ -13,16 +14,16 @@ part 'rest_api_client.g.dart';
 abstract class RestApiClient {
   factory RestApiClient(Dio dio, {String? baseUrl}) = _RestApiClient;
 
-  @GET('posts')
+  @GET(Endpoints.getEndpoint)
   Future<List<Post>> getPosts();
 
-  @DELETE('posts/{id}')
+  @DELETE('${Endpoints.getEndpoint}/{id}')
   Future<void> deletePost(@Path('id') String id);
 
-  @POST('posts')
+  @POST(Endpoints.getEndpoint)
   Future<void> addPost(@Body() Post post);
 
-  @PUT('posts/{id}')
+  @PUT('${Endpoints.getEndpoint}/{id}')
   Future<Post> updatePost(@Path('id') String id, @Body() Post post);
 }
 

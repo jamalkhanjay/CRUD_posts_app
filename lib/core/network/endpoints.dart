@@ -1,4 +1,4 @@
 // API endpoints
 class Endpoints {
-  static final String getEndpoint = 'posts';
+  static const String getEndpoint = 'posts';
 }
